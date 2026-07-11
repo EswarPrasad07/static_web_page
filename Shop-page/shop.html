@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <style>
+    header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow:0 2px 0px rgb(0, 0, 0,0.2) ;
+     flex: 1;
+      
+    }
+    .img-logo{
+      width: 180px;
+    }
+    .header-search-b{
+      width: 30px;
+      margin: 0px 10px 0px 10px
+    }
+    .header-search-img{
+      width: 20px;
+      margin: 0px 10px 0px 10px;
+
+    }
+    
+    .header-profile-img{
+      width: 28px;
+      border-radius: 25px;
+    }
+
+    a{
+      text-decoration: none;
+      color: green;
+      font-size: 18px;
+      margin-left: 50px;
+    }
+
+    /* ************************section************************ */
+    section{
+      position: relative;
+      background-color: rgb(211, 211, 211,0.2);
+    }
+    .section-side{
+      width: 300px;
+      height: 900px;
+      padding-top:10px ;
+      
+    }
+    .section-side-bar{
+      height: 300px;
+      width: 200px;
+      /* border: 1px solid black; */
+      margin-left: 50px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgb(0, 0, 0,0.1);
+      padding: 10px;
+      
+    }
+    .sidebar-checkboxes{
+      margin-left: 10px;
+      margin-top: 10px;
+      
+    }
+    .section-side-bar h3{
+      margin-left: 10px;
+    }
+    /* ********************section-middle grid*************** */
+    
+    .section-middle{
+      margin-left: 310px;
+      position: absolute;
+      top: 0px;
+      
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 50px;
+      
+      padding-top: 20px;
+      
+    }
+    .fruit-img{
+      width: 200px;
+    }
+    .rating-img{
+      width: 110px;
+    }
+    .cart-btn{
+      width: 130px;
+      height: 30px;
+      background-color: green;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .grid-box{
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: inline;
+      padding: 20px;
+      background-color: white;
+    }
+
+     /* *******hidden menu*********** */
+      .hidden-menu-img{
+        width: 20px;
+        border: none;
+        cursor: pointer;
+        display: none;
+
+      }
+        @media Screen and (max-width:600px){
+        .header-menu-bar{
+          display: none;
+        }
+        .hidden-menu-img{
+          display: inline;
+        }
+        header{
+          display: flex;
+          justify-content: space-evenly;
+
+        }
+        .section-side{
+          display: none;
+        }
+        .section-middle{
+          margin-left: 30px;
+        }
+
+        .grid{
+         display: grid;
+         grid-template-columns: auto auto;
+        }
+      }
+
+
+
+  </style>
+</head>
+<body style="margin: 0px;">
+  <header>
+     <div class="hidden-menu">
+      
+        <img src="menu.png" alt="" class="hidden-menu-img">
+
+    </div>
+    <div class="header-logo">
+      <img src="logo.png"  class="img-logo" alt="">
+    </div>
+    <div class="header-menu-bar">
+      <a href="../HOME-page/index.html" target="_blank">Home</a>
+      <a href="../Shop-page/shop.html">Shop</a>
+      <a href="">Categories</a>
+      <a href="../About-page/about.html" target="_blank">About Us</a>
+      <a href="../Contact-page/contact.html" target="_blank">Contact</a>
+    </div>
+    <div>
+      <a href=""><img src="search.svg" class="header-search-img"></a>
+      <a href="../Profile-page/profile.html" target="_blank"><img src="profile.png" alt="" class="header-profile-img"></a>
+    </div>
+  </header>
+  <section>
+    <div class="section-side">
+         <h2 style="margin-left: 50px;">Filters</h2>
+    <div class="section-side-bar">
+      <h3>Categories</h3>
+      <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">All Fruits</label><br>
+      </div>
+       <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">Apple</label><br>
+      </div>
+       <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">Bananas </label><br>
+      </div>
+       <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">Grapes</label><br>
+      </div>
+       <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">Mangoes</label><br>
+      </div>
+       <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">Berries</label><br>
+      </div>
+       <div class="sidebar-checkboxes">
+        <input type="checkbox">
+      <label for="">Exotic Fruits</label><br>
+      </div>
+    </div>
+   </div>
+   <div class="section-middle">
+    <div class="grid">
+      <div class="grid-box">
+        <img class="fruit-img" src="apple.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$50/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="strawberry.png" alt="">
+        <h3 style="margin: 0px;">Banana</h3>
+        <p>$2/p</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="kiwi.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$20/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="orange.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$30/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="blueberry.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$25/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="mangu.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$70/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="pina-apple.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$65/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="grid-box">
+        <img class="fruit-img" src="grape.png" alt="">
+        <h3 style="margin: 0px;">Apple</h3>
+        <p>$30/kg</p>
+        <img class="rating-img" src="rating.png" alt=""><br>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+   </div>
+  </section>
+  <footer></footer>
+</body>
+</html>

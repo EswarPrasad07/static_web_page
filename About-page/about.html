@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+     header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 4px 0px rgb(0, 0, 0,0.2);
+    }
+    .img-logo{
+      width: 180px;
+    }
+    .header-search-b{
+      width: 30px;
+      margin: 0px 10px 0px 10px
+    }
+    .header-search-img{
+      width: 20px;
+      margin: 0px 10px 0px 10px;
+
+    }
+    
+    .header-profile-img{
+      width: 28px;
+      border-radius: 25px;
+    }
+
+    a{
+      text-decoration: none;
+      color: green;
+      font-size: 18px;
+      margin-left: 50px;
+    }
+     /* *******hidden menu*********** */
+      .hidden-menu-img{
+        width: 20px;
+        border: none;
+        cursor: pointer;
+        display: none;
+      }
+
+      /* *************section-part****************** */
+      section{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 80px;
+      }
+      
+      .section-img-block{
+        width: 550px;
+      }
+      .section-img{
+       width:100%; 
+
+      }
+      .section-content-block{
+        margin-left: 50px;
+      }
+      .content-h1{
+        font-family: arial;
+        color: green;
+        margin-top: 10px;
+      }
+      .content-p{
+        font-family: arial;
+        font-size:23px ;
+      }
+      .check-img{
+        width:40px;
+        margin-right: 10px;
+      }
+      .check-container{
+        display: flex;
+        align-items: center;
+      }
+      .check-p{
+        font-family: arial;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+       /* ***************************foooter part********* */
+      
+      .container{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 128, 0,0.2);
+
+        
+      }
+      .box{
+        height: 130px;
+        width: 160px;
+        
+        margin:0px 30px 0px 30px ;
+      }
+      .img{
+        width: 110px;
+        padding: 10px;
+      }
+      .box .img:hover{
+        height: 132px;
+        width: 161px;
+      }
+      .foot-head{
+        text-align: center;
+        color: green;
+        font-family: arial;
+        margin-bottom: 10px;
+        margin-top: 2px;
+        
+      }
+      
+    
+       /* **************footer-of the page***************** */
+        .foot-last{
+        margin-top: 20px;
+        height:60px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .foot-last-div-p
+      {
+        margin-left: 100px;
+      }
+      .foot-last-p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      .foot-last-div-a{
+        margin-right: 100px;
+      }
+      footer div a{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 70px;
+      }
+
+
+
+
+
+        @media Screen and (max-width:600px){
+       
+          .header-menu-bar{
+          display: none;
+        }
+        .hidden-menu-img{
+          display: inline;
+        }
+        header{
+          display: flex;
+          justify-content: space-evenly;
+        }
+        section{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0px;
+        }
+        .section-img-block{
+          width:500px ;
+        }
+        .section-content-block{
+          margin-left: 10px;
+        }
+        .container{
+          display: grid;
+          grid-template-columns: auto auto;
+          
+        }
+        .box{
+          height: 100px;
+        }
+         .foot-last{
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+          align-items: center;
+           height: 70px;
+           width: 590px;
+        }
+      }
+  </style>
+</head>
+<body>
+    <header>
+     <div class="hidden-menu">
+      
+        <img src="menu.png" alt="" class="hidden-menu-img">
+
+    </div>
+    <div class="header-logo">
+      <img src="logo.png"  class="img-logo" alt="">
+    </div>
+    <div class="header-menu-bar">
+      <a href="../HOME-Page/index.html" target="_blank">Home</a>
+      <a href="../Shop-page/shop.html" target="_blank">Shop</a>
+      <a href="">Categories</a>
+      <a href="../About-page/about.html">About Us</a>
+      <a href="../Contact-page/contact.html" target="_blank">Contact</a>
+    </div>
+   
+    <div>
+      <a href=""><img src="search.svg" class="header-search-img"></a>
+      <a href="../Profile-page/profile.html" target="_blank"><img src="profile.png" alt="" class="header-profile-img"></a>
+    </div>
+  </header>
+  <section>
+    <div class="section-img-block">
+      <img src="fruits.png" alt="" class="section-img">
+    </div>
+    <div class="section-content-block">
+      <h1 class="content-h1">About FreshCart</h1>
+      <p class="content-p">FreshCart is your trusted online fruit store. We <br>
+      provide the freshest,healthiest and most <br>
+    delicious fruits directly from farms to your <br>
+  doorstep.</p>
+      <div class="check-container">
+        <img src="check.png" alt="" class="check-img">
+        <p class="check-p">100% Organic & Fresh</p>
+      </div>
+      <div class="check-container">
+        <img src="check.png" alt="" class="check-img">
+        <p class="check-p">Directly from Farmers</p>
+      </div>
+      <div class="check-container">
+        <img src="check.png" alt="" class="check-img">
+        <p class="check-p">No Chemicals or Preservatives</p>
+      </div>
+      <div class="check-container">
+        <img src="check.png" alt="" class="check-img">
+        <p class="check-p">Satisfaction Guaranteed</p>
+      </div>
+    </div>
+    </section>
+    <h1 class="foot-head">Why Choose Us</h1>
+   
+    <span class="border"></span>
+     <div class="container">
+      <div class="box">
+        <img src="organic.png" class="img" alt="">
+      </div>
+      <div class="box">
+        <img src="farmers.png" class="img" alt="">
+      </div>
+      <div class="box">
+        <img src="fast delivery.png" class="img" alt="">
+      </div>
+      <div class="box">
+        <img src="safe&secure.png" class="img" alt="">
+      </div>
+    </div>
+    
+  
+   <footer>
+    <div class="foot-last">
+      <div class="foot-last-div-p">
+        <p class="foot-last-p">@2026 FreeCart All Rights Reserved.</p>
+      </div>
+      <div class="foot-last-div-a">
+        <a href="../privacy+return+terms/privacypolicy.html" target="_blank">Privacy Policy</a>
+        <a href="../privacy+return+terms/terms&conditions.html" target="_blank">Terms & Conditions</a>
+        <a href="../privacy+return+terms/return_policy.html" target="_blank">Return Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

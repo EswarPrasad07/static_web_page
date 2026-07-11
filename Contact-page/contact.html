@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+     header{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 4px 0px rgb(0, 0, 0,0.2);
+    }
+    .img-logo{
+      width: 180px;
+    }
+    .header-search-b{
+      width: 30px;
+      margin: 0px 10px 0px 10px
+    }
+    .header-search-img{
+      width: 20px;
+      margin: 0px 10px 0px 10px;
+
+    }
+    
+    .header-profile-img{
+      width: 28px;
+      border-radius: 25px;
+    }
+
+    a{
+      text-decoration: none;
+      color: green;
+      font-size: 18px;
+      margin-left: 50px;
+    }
+     /* *******hidden menu*********** */
+      .hidden-menu-img{
+        width: 20px;
+        border: none;
+        cursor: pointer;
+        display: none;
+      }
+      /* ***************section************** */
+      section{
+        display: flex;
+        margin-top: 50px;
+      }
+      .contact-block{
+        margin-left: 80px;
+      }
+      .contact-icons{
+        width: 40px;
+      }
+      .contact-p{
+        display: inline;
+        font-family: arial;
+        margin-left: 10px;
+      }
+      .contact-p a{
+        margin-left: 0px;
+      }
+      .contact-cont{
+        display: flex;
+        align-items: center;
+      }
+      /* ********name filling form********** */
+      
+      
+      .form-box{
+        height: 400px;
+        width: 600px;
+        margin-left: 200px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0,0.4);
+        border-radius: 15px;
+      }
+      .input-area{
+        width: 500px;
+        height:40px ;
+        margin:30px 40px 0px 40px;
+        border: 2px solid rgb(221, 221, 221);
+      }
+      .input-area::placeholder{
+        padding-left: 20px;
+        font-family: arial;
+        font-size: 15px;
+        
+      }
+      .textarea{
+        height: 130px;
+        width: 500px;
+        margin-top: 30px;
+        margin-left: 40px;
+        border: 2px solid rgb(221, 221, 221);
+      }
+      .textarea::placeholder{
+        padding-left: 20px;
+        padding-top: 10px;
+        font-family: arial;
+        font-size: 15px;
+      }
+      .send-btn{
+        height: 40px;
+         width: 170px;
+          background-color: green;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          margin-left: 230px;
+          margin-top: 20px;
+       }
+       /* **************footer-of the page***************** */
+        .foot-last{
+        margin-top: 30px;
+        height:60px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .foot-last-div-p
+      {
+        margin-left: 100px;
+      }
+      .foot-last-p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      .foot-last-div-a{
+        margin-right: 100px;
+      }
+      footer div a{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 70px;
+      }
+      @media Screen and (max-width:600px){
+        .header-menu-bar{
+          display: none;
+        }
+        .hidden-menu-img{
+          display: inline;
+        }
+        header{
+          display: flex;
+          justify-content: space-evenly;
+        }
+        section{
+         display: flex;
+         flex-direction: column;
+        
+        }
+        .form-box{
+          width: 90%;
+          margin-left: 30px;
+          margin-top: 10px;
+        }
+        .input-area{
+        width: 80%;
+        height:40px ;
+        margin:30px 40px 0px 40px;
+        border: 2px solid rgb(221, 221, 221);
+      }
+      .textarea{
+        width: 80%;
+      }
+      .send-btn{
+        margin-left: 150px;
+      }
+
+        .contact-block{
+          margin-left: 50px;
+        
+        }
+
+
+        .foot-last{
+          display: flex;
+          flex-direction: column;
+          margin-top: 80px;
+          align-items: center;
+          height: 70px;
+          width: 590px;
+        }
+         .map-block{
+          width: 590px;
+        }
+        iframe{
+          width: 100%s;
+        }
+      }
+  </style>
+</head>
+<body>
+   <header>
+     <div class="hidden-menu">
+      
+        <img src="menu.png" alt="" class="hidden-menu-img">
+
+    </div>
+    <div class="header-logo">
+      <img src="logo.png"  class="img-logo" alt="">
+    </div>
+    <div class="header-menu-bar">
+      <a href="../HOME-Page/index.html" target="_blank">Home</a>
+      <a href="../Shop-page/shop.html" target="_blank">Shop</a>
+      <a href="">Categories</a>
+      <a href="../About-page/about.html" target="_blank">About Us</a>
+      <a href="../Contact-page/contact.html">Contact</a>
+    </div>
+   
+    <div>
+      <a href=""><img src="search.svg" class="header-search-img"></a>
+      <a href="../Profile-page/profile.html" target="_blank"><img src="profile.png" alt="" class="header-profile-img"></a>
+    </div>
+  </header>
+  <section>
+    <div class="contact-block">
+      <h1>Contact Us</h1>
+      <div class="contact-cont">
+      <img src="location.png" alt="" class="contact-icons">
+      <p class="contact-p"> Fruit Street,<br>ESI hospital,hyderabad,india.</p>
+      </div>
+      <div class="contact-cont">
+      <img src="telephone.png" alt="" class="contact-icons">
+      <p class="contact-p">+91 87122 54744</p>
+      </div>
+      <div class="contact-cont">
+      <img src="mail.png" alt="" class="contact-icons">
+      <p class="contact-p"><a href="eshwaradoni@gmail.com">support@gfreshcart.com</a></p>
+      </div>
+      <div class="contact-cont">
+      <img src="time.png" alt="" class="contact-icons">
+      <p class="contact-p">Mon - Sat: 8:00 AM - 8:00 PM <br>Sunday: 9:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+    <div class="form-box">
+      <form action="">
+        <input type="text" placeholder="Your Name" class="input-area">
+        <input type="email" placeholder="Enter Email" class="input-area">
+        <textarea placeholder="Your Message" name="" id="" class="textarea" ></textarea>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <div style="margin-top: 20px;" class="map-block">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4756378636757!2d78.44457557501127!3d17.436934383458787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91afbd479595%3A0x15a95bea860888d8!2sTeks%20Academy!5e0!3m2!1sen!2sin!4v1783621246673!5m2!1sen!2sin" width="100%" height="120px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+  <footer>
+    <div class="foot-last">
+      <div class="foot-last-div-p">
+        <p class="foot-last-p">@2026 FreeCart All Rights Reserved.</p>
+      </div>
+      <div class="foot-last-div-a">
+        <a href="../privacy+return+terms/privacypolicy.html" target="_blank">Privacy Policy</a>
+        <a href="../privacy+return+terms/terms&conditions.html" target="_blank">Terms & Conditions</a>
+        <a href="../privacy+return+terms/return_policy.html" target="_blank">Return Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

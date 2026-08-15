@@ -11,6 +11,7 @@
       align-items: center;
       box-shadow:0 2px 0px rgb(0, 0, 0,0.2) ;
      flex: 1;
+     position: relative;
       
     }
     .img-logo{
@@ -30,14 +31,31 @@
       width: 28px;
       border-radius: 25px;
     }
+    .header-cart{
+      width: 28px;
+      margin: 0px 20px 0px 20px;
+    }
 
     a{
       text-decoration: none;
       color: green;
       font-size: 18px;
-      margin-left: 50px;
+      margin-left: 20px;
     }
+    .item-cart{
+      width: 18px;
+      height: 18px;
+      background-color:red;
+      position: absolute;
+      top: 20px;
+      right: 161px;
+      text-align: center;
+      border-radius: 9px;
+      font-size:13px;
+      
+      
 
+    }
     /* ************************section************************ */
     section{
       position: relative;
@@ -138,10 +156,28 @@
          grid-template-columns: auto auto;
         }
       }
-
+    
 
 
   </style>
+  <script>
+    let c=0
+    function add_cart()
+    {
+      c++
+     document.getElementById("cart-id").innerHTML=c 
+    }
+    function reset_cart()
+    {
+      if (c>0){
+         c--
+      document.getElementById("cart-id").innerHTML=c
+      }
+     
+    }
+   
+    
+  </script>
 </head>
 <body style="margin: 0px;">
   <header>
@@ -154,15 +190,21 @@
       <img src="logo.png"  class="img-logo" alt="">
     </div>
     <div class="header-menu-bar">
-      <a href="../HOME-page/index.html" target="_blank">Home</a>
-      <a href="../Shop-page/shop.html">Shop</a>
-      <a href="">Categories</a>
-      <a href="../About-page/about.html" target="_blank">About Us</a>
-      <a href="../Contact-page/contact.html" target="_blank">Contact</a>
-    </div>
+  <a href="/HOME-Page/index.html">Home</a>
+  <a href="/Shop-page/shop.html">Shop</a>
+  <a href="#">Categories</a>
+  <a href="/About-page/about.html">About Us</a>
+  <a href="/Contact-page/contact.html">Contact</a>
+</div>
+
     <div>
       <a href=""><img src="search.svg" class="header-search-img"></a>
-      <a href="../Profile-page/profile.html" target="_blank"><img src="profile.png" alt="" class="header-profile-img"></a>
+      <img src="shopping-cart.png" alt="" class="header-cart">
+      <span class="item-cart" id="cart-id" >0</span>
+      
+      
+      <a href="/Profile-page/profile.html" target="_blank"><img src="profile.png" alt="" class="header-profile-img"></a>
+  
     </div>
   </header>
   <section>
@@ -204,63 +246,91 @@
     <div class="grid">
       <div class="grid-box">
         <img class="fruit-img" src="apple.png" alt="">
-        <h3 style="margin: 0px;">Apple</h3>
-        <p>$50/kg</p>
+        <h3 style="margin: 0px;" id="name1">Apple</h3>
+        <p>$<Span id="price1">50</Span></p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" onclick="add_cart()" id="list1">Add to Cart</button>
+        <button onclick="reset_cart()">Reset</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="strawberry.png" alt="">
         <h3 style="margin: 0px;">Banana</h3>
         <p>$2/p</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+       <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="kiwi.png" alt="">
         <h3 style="margin: 0px;">Apple</h3>
         <p>$20/kg</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="orange.png" alt="">
         <h3 style="margin: 0px;">Apple</h3>
         <p>$30/kg</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+         <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="blueberry.png" alt="">
         <h3 style="margin: 0px;">Apple</h3>
         <p>$25/kg</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+         <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="mangu.png" alt="">
         <h3 style="margin: 0px;">Apple</h3>
         <p>$70/kg</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="pina-apple.png" alt="">
         <h3 style="margin: 0px;">Apple</h3>
         <p>$65/kg</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
       <div class="grid-box">
         <img class="fruit-img" src="grape.png" alt="">
         <h3 style="margin: 0px;">Apple</h3>
         <p>$30/kg</p>
         <img class="rating-img" src="rating.png" alt=""><br>
-        <button class="cart-btn">Add to Cart</button>
+         <button class="cart-btn" onclick="add_cart()">Add to Cart</button>
       </div>
     </div>
    </div>
   </section>
   <footer></footer>
+  <script>
+     let cart=[]
+      
+    let ele1=document.getElementById("list1")
+     let res=ele1.addEventListener("click",()=>{
+      const product={}
+      let val=document.getElementById("name1")
+      let val2=document.getElementById("price1")
+      product={name:val.innerHTML,
+        price:Number(val2.innerHTML),
+        qty:1
+        
+      }
+      cart.push(product)
+      console.log(cart[0].name)
+      
+    })
+
+
+
+    
+  
+    
+    
+    
+    
+  </script>
 </body>
 </html>
